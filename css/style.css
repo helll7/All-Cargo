@@ -104,7 +104,7 @@
     top: -18px;
     font-size: 13px;
     color: #000000; }
-._hero .hero_form .form_control #serviceType, ._hero .hero_form .form_control #location {
+._hero .hero_form .form_control #service_type, ._hero .hero_form .form_control #location {
     width: 100%;
     padding: 5px;
     margin: 10px 0px;
@@ -447,6 +447,7 @@ body {
 ._our_usp ul{
     text-align: left;
     padding: 0 0 0 35px;
+    font-size: 15px;
 }
 .cfslogo, .cfslogo:hover{
     color: #fff;
@@ -473,7 +474,7 @@ body {
     color: #f01526;
     font-weight: bold;
     font-size: 23px;
-    margin: 20px 0px; }
+    margin: 0px 0px 20px; }
 @media (max-width: 768px) {
     ._our_usp {
         padding: 50px 0px; }
@@ -515,3 +516,10 @@ body {
     background-color: #ff4f5d; }
 
 /*# sourceMappingURL=style.css.map */
+.feature_img{
+    margin: 0;
+}
+.feature_img img{
+    width: 100%;
+    padding: 10px 0;
+}

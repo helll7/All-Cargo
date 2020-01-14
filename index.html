@@ -3,18 +3,7 @@
 <html lang="en">
     <head>
         <!-- Google Tag Manager -->
-        <script>
-            (function (w, d, s, l, i) {
-                w[l] = w[l] || [];
-                w[l].push({"gtm.start": new Date().getTime(), event: "gtm.js"});
-                var f = d.getElementsByTagName(s)[0],
-                        j = d.createElement(s),
-                        dl = l != "dataLayer" ? "&l=" + l : "";
-                j.async = true;
-                j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-                f.parentNode.insertBefore(j, f);
-            })(window, document, "script", "dataLayer", "GTM-K53C9D3");
-        </script>
+       
         <!-- End Google Tag Manager -->
         <!-- Google Tag Manager (noscript) -->
         <noscript>
@@ -70,37 +59,37 @@
                         Partner with the World’s no. 1 LCL Shipment Consolidator. Fill in
                         the form to get instant quote
                     </div>-->
-                    <form action="" class="hero_form" id="enquiryFrom" data-aos="fade-up" data-aos-delay="500">
+                    <form action="#" class="hero_form" id="enquiryFrom" data-aos="fade-up" data-aos-delay="500" method="post" onsubmit="postContactToGoogle();return false">
                         <div class="form-group-wrapper d-flex flex-wrap align-items-center">
                             <div class="form_control">
                                 <div class="floating-label">
-                                    <input class="floating-input" type="text" placeholder=" " id="uname" name="uname" />
+                                    <input class="floating-input" type="text" placeholder=" " id="name" name="name" required/>
                                     <label class="animate-label">Name<span class="asterisk">*</span></label>
                                 </div>
                             </div>
                             <div class="form_control">
                                 <div class="floating-label">
-                                    <input class="floating-input" type="text" placeholder=" " id="mobileNumeber" name="mobileNumeber" />
+                                    <input class="floating-input" type="text" placeholder=" " id="mobile" name="mobile" pattern="[0-9]{10,}" required maxlength="10"/>
                                     <label class="animate-label">Mobile<span class="asterisk">*</span></label>
                                 </div>
                             </div>
                             <div class="form_control">
                                 <div class="floating-label">
-                                    <input class="floating-input" type="email" placeholder=" " name="email" id="email" />
+                                    <input class="floating-input" type="email" placeholder=" " name="email" id="email" required/>
                                     <label class="animate-label">Email<span class="asterisk">*</span></label>
                                 </div>
                             </div>
                             <div class="form_control">
                                 <div class="floating-label">
-                                    <input class="floating-input" type="text" placeholder=" " name="companyname" id="companyname" />
+                                    <input class="floating-input" type="text" placeholder=" " name="organisation_name" id="organisation_name" required/>
                                     <label class="animate-label">Organisation Name<span class="asterisk">*</span></label>
                                 </div>
                             </div>
                             <div class="form_control">
                                 <div class="floating-label">
-                                    <select name="location" id="location" size="1">
+                                    <select name="location" id="location" size="1" required>
                                         <option value="">Location*</option>
-                                        <option value="Nhava Sheva">Nhava Sheva</option>
+                                        <option value="Mumbai">Mumbai</option>
                                         <option value="Chennai">Chennai</option>
                                         <option value="Kolkata">Kolkata</option>
                                         <option value="Mundra">Mundra</option>
@@ -110,7 +99,7 @@
                             </div>                            
                             <div class="form_control">
                                 <div class="floating-label">
-                                    <select name="serviceType" id="serviceType" size="1">
+                                    <select name="service_type" id="service_type" size="1" required>
                                         <option value="">Type of service*</option>
                                         <option value="Imports, Exports">Imports, Exports</option>
                                         <option value="Bonded Warehouse">Bonded Warehouse</option>
@@ -137,10 +126,13 @@
     <section class="_our_usp">
         <div class="container">
             <h1 class="heading" data-aos="fade-up" data-aos-offset="-200">
-                Features
+                Features of CFS
             </h1>
             <div class="four--grid">
                 <div class="col--3" data-aos="fade-up" data-aos-delay="300" data-aos-offset="-200">
+                    <p class="feature_img">
+                        <img src="img/01.png" alt="" title="" />
+                    </p>
                     <p class="count">Mumbai, Mundra & Dadri</p>
                     <ul>
                         <li>Global Network of Offices</li>
@@ -151,6 +143,9 @@
                     </ul>
                 </div>
                 <div class="col--3" data-aos="fade-up" data-aos-delay="500" data-aos-offset="-200">
+                    <p class="feature_img">
+                        <img src="img/02.png" alt="" title="" />
+                    </p>
                     <p class="count">Kolkata</p>
                     <ul>
                         <li>1.5 Km from the Port</li>
@@ -161,6 +156,9 @@
                     </ul>
                 </div>
                 <div class="col--3" data-aos="fade-up" data-aos-delay="700" data-aos-offset="-200">
+                    <p class="feature_img">
+                        <img src="img/03.png" alt="" title="" />
+                    </p>
                     <p class="count">Chennai</p>
                     <ul>
                         <li>Closest CFS from Chennai Port</li>
@@ -352,7 +350,7 @@
                 data-aos-offset="-100"
                 data-aos-duration="1000"
                 >
-                <img src="img/vid.jpg" alt="video" class="thumb-img" />
+                <img src="img/CFS-Video-Cover.png" alt="video" class="thumb-img" />
             </div>
         </div>
         <div id="vidBox">
@@ -475,5 +473,30 @@
 <script src="./js/videopopup.js"></script>
 <script src="./js/aos.js"></script>
 <script src="./js/index.js"></script>
-<script></script>
+
+<script>
+    function postContactToGoogle() {
+        $.ajax({
+                url:"https://script.google.com/macros/s/AKfycbx0UdezEkAlG7LR_1PbXfkAxOxWHBOow8sATJaVU8VzpU-ELGUg/exec",
+                // headers: { 'Access-Control-Allow-Origin': "*"},
+                data:{
+                    'name':$('#name').val(),
+                    'email':$('#email').val(),
+                    'mobile':$('#mobile').val(),
+                    'location':$('#location').val(),
+                    'organisation_name':$('#organisation_name').val(),
+                    'service_type':$('#service_type').val()
+                },
+                type: "GET",
+                // dataType: "xml",
+                // dataType: 'json',
+                // processData: false,
+                // contentType: false,
+                success: function(res) {
+                    $("#enquiryFrom")[0].reset() 
+                   $("#successMsgModal").modal("show");
+                }
+            });
+    }
+</script>
 </html>
