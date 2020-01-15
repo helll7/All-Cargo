@@ -523,3 +523,16 @@ body {
     width: 100%;
     padding: 10px 0;
 }
+.one.asterisk-wrap.asterisk::after {
+    right: 150px;
+}
+.two.asterisk-wrap.asterisk::after {
+    right: 98px;
+}
+.asterisk-wrap.asterisk::after {
+    position: absolute;
+    content: '*';
+    color: #f01526;
+    right: 45px;
+    top: 15px;
+}

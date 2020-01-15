@@ -117,4 +117,20 @@ jQuery(document).ready(function($) {
   //   //   return false;
   //   // }
   // });
+  $("#location").change(function() {
+       const ast_check1 = $("#location").val();
+        if (ast_check1 == "") {
+          $(".one.asterisk-wrap").addClass("asterisk");
+        } else {
+          $(".one.asterisk-wrap").removeClass("asterisk");
+        }
+  });
+   $("#service_type").change(function() {
+       const ast_check1 = $("#service_type").val();
+        if (ast_check1 == "") {
+          $(".two.asterisk-wrap").addClass("asterisk");
+        } else {
+          $(".two.asterisk-wrap").removeClass("asterisk");
+        }
+  });
 });
