@@ -536,3 +536,184 @@ body {
     right: 45px;
     top: 15px;
 }
+
+/*Responsive CSS*/
+@media screen and (max-width: 1024px){
+    ._hero .heading{
+        margin: 70px 0 60px 0;
+    }
+    ._our_usp .count{
+        font-size: 18px;
+    }
+    .align-items-center{
+            text-align: center;
+    }
+    ._allcargo_footer .image_wrapper {
+        padding-left: 0;
+        width: 100%;
+    }
+    #videCont{
+        padding-top: 10px !important;
+    }
+    .one.asterisk-wrap.asterisk::after {
+        right: 126px;
+    }
+    .one.asterisk-wrap.asterisk::after {
+        right: 126px;
+    }
+}
+@media screen and (max-width: 990px){
+    .one.asterisk-wrap.asterisk::after {
+        right: 116px;
+    }
+    .two.asterisk-wrap.asterisk::after {
+        right: 65px;
+    }
+    .container {
+        max-width: 90%;
+    }
+    ._hero .heading {
+        margin: 110px 0 70px 0;
+    }
+}
+@media screen and (max-width: 800px){
+    ._hero .hero_form .form_control .animate-label, ._hero .hero_form .form_control #service_type, ._hero .hero_form .form_control #location{
+        font-size: 13px;
+    }
+    .one.asterisk-wrap.asterisk::after {
+        right: 82px;
+    }
+    .two.asterisk-wrap.asterisk::after {
+        right: 39px;
+    }
+    ._our_usp .four--grid .col--3{
+        width: 70%;
+    }
+    #videCont {
+        padding-top: 70px !important;
+    }
+}
+@media screen and (max-width: 768px){
+    ._hero .heading {
+        margin: 0 0 70px 0;
+    }
+    .one.asterisk-wrap.asterisk::after {
+        right: 90%;
+    }
+    .two.asterisk-wrap.asterisk::after {
+        right: 84%;
+    }
+}
+@media screen and (max-width: 640px){
+    .two.asterisk-wrap.asterisk::after {
+        right: 84%;
+    }
+    .one.asterisk-wrap.asterisk::after {
+        right: 88%;
+    }
+}
+@media screen and (max-width: 600px){
+    .one.asterisk-wrap.asterisk::after {
+        right: 87%;
+    }
+    .two.asterisk-wrap.asterisk::after {
+        right: 79%;
+    }
+}
+@media screen and (max-width: 570px){
+    .two.asterisk-wrap.asterisk::after {
+        right: 77%;
+    }
+    .one.asterisk-wrap.asterisk::after {
+        right: 86%;
+    }
+}
+@media screen and (max-width: 535px){
+    .two.asterisk-wrap.asterisk::after {
+        right: 76%;
+    }
+    .one.asterisk-wrap.asterisk::after {
+        right: 85%;
+    }
+}
+@media screen and (max-width: 520px){
+    .two.asterisk-wrap.asterisk::after {
+        right: 74%;
+    }
+    .one.asterisk-wrap.asterisk::after {
+        right: 83%;
+    }
+}
+@media screen and (max-width: 480px){
+    .two.asterisk-wrap.asterisk::after {
+        right: 72%;
+    }
+    .one.asterisk-wrap.asterisk::after {
+        right: 83%;
+    }
+    ._our_usp .four--grid .col--3 {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 452px){
+    .two.asterisk-wrap.asterisk::after {
+        right: 71%;
+    }
+    .one.asterisk-wrap.asterisk::after {
+        right: 82%;
+    }
+}
+@media screen and (max-width: 425px){
+    .one.asterisk-wrap.asterisk::after {
+        right: 81%;
+    }
+    .two.asterisk-wrap.asterisk::after {
+        right: 70%;
+    }
+}
+@media screen and (max-width: 414px){
+    .two.asterisk-wrap.asterisk::after {
+        right: 66%;
+    }
+    .one.asterisk-wrap.asterisk::after {
+        right: 79%;
+    }
+}
+@media screen and (max-width: 384px){
+    .one.asterisk-wrap.asterisk::after {
+        right: 78%;
+    }
+    .two.asterisk-wrap.asterisk::after {
+        right: 63.5%;
+    }
+}
+@media screen and (max-width: 375px){
+    .cfslogo, .cfslogo:hover{
+        font-size: 30px;
+    }
+    .one.asterisk-wrap.asterisk::after {
+        right: 76%;
+    }
+    .two.asterisk-wrap.asterisk::after {
+        right: 61%;
+    }
+}
+@media screen and (max-width: 360px){
+    .one.asterisk-wrap.asterisk::after {
+        right: 76%;
+    }
+    .two.asterisk-wrap.asterisk::after {
+        right: 61%;
+    }
+}
+@media screen and (max-width: 320px){
+    .cfslogo, .cfslogo:hover{
+        font-size: 24px;
+    }
+    .two.asterisk-wrap.asterisk::after {
+        right: 51%;
+    }
+    .one.asterisk-wrap.asterisk::after {
+        right: 70%;
+    }
+}
